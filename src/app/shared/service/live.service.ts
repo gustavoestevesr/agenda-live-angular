@@ -17,11 +17,11 @@ export class LiveService {
   constructor(private httpClient: HttpClient) {}
 
   public getPreviousLives(): Observable<Live> {
-    return this.httpClient.get<Live>(`${this.apiUrl}/previous`);
+    return this.httpClient.get<Live>(`${this.apiUrl}/previousLives`);
   }
 
   public getNextLives(): Observable<Live> {
-    return this.httpClient.get<Live>(`${this.apiUrl}/next`);
+    return this.httpClient.get<Live>(`${this.apiUrl}/nextLives`);
   }
 
   public postLives(live: any): Observable<Live> {
