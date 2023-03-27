@@ -1,12 +1,20 @@
 <mat-tab-group style="padding-top: 40px; padding-left: 2rem; padding-right: 2rem;">
   <mat-tab label="PRÓXIMAS">
     <div class="row" style="display: flex; justify-content: start; padding: 2rem;">
-      <div style="margin: 15px;">
-        <mat-card class="example-card">
-          <mat-card-header>
-
-          </mat-card-header>
-          <mat-card-content>
+      <ng-container *ngFor="let live of nextLives" style="margin: 0.5%;">
+        <mat-card class="mat-card-live">
+          <mat-card-title class="mat-card-title-live">
+            <div class="row" style="display: flex; justify-content: space-between;">
+              <span style="font-size:0.9rem;" fxFlex="70" fxLayoutAlign="start center">{{live.liveName}}</span>
+              <mat-chip class="mat-chip-date" selected="true">
+                <span style="font-size:0.7rem;">{{live.liveDate}}</span>
+              </mat-chip>
+            </div>
+            <div class="row">
+              <p style="font-size:0.7rem;">Canal: <span>{{live.channelName}}</span></p>
+            </div>
+          </mat-card-title>
+          <mat-card-content style="padding: 10px;">
             <p>
               The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
               A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
@@ -14,7 +22,7 @@
             </p>
           </mat-card-content>
         </mat-card>
-      </div>
+      </ng-container>
     </div>
   </mat-tab>
 
