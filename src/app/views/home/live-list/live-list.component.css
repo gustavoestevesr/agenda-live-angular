@@ -1,22 +1,38 @@
-.mat-card-live {
-  border: 1px solid #cfd8dc;
-  border-radius: 4px 3px 6px / 2px 4px;
-  padding-top: 15px;
-  padding-left: 0%;
-  padding-right: 0%;
-  padding-bottom: 0%;
-  margin: 5px;
+.mat-tab-group {
+  margin: 2rem;
 }
 
-.mat-card-title-live {
+.mat-card {
+  border: 1px solid #cfd8dc;
+  border-radius: 5px;
+  padding: 0px;
+  padding: 15px;
+  width: 35rem;
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.mat-card-title {
   padding-left: 10px;
-  padding-top: 0px;
-  padding-right: 15px;
-  margin-bottom: 0px;
+  padding-right: 10px;
   min-height: 70px;
 }
 
-.mat-chip-date {
-  background-color: #90caf9 !important;
+.mat-chip-previous {
+  background-color: #f99090 !important;
   color: black !important;
+  font-size: 0.8rem;
+}
+
+.mat-chip-next {
+  background-color: #90f999 !important;
+  color: black !important;
+  font-size: 0.8rem;
 }
