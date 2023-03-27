@@ -13,12 +13,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { LiveListComponent } from './views/home/live-list/live-list.component';
+import { LocalDateTimePipe } from './shared/pipe/local-date-time.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LiveListComponent
+    LiveListComponent,
+    LocalDateTimePipe
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { LiveListComponent } from './views/home/live-list/live-list.component';
     HttpClientModule,
     MatChipsModule
   ],
-  providers: [],
+  providers: [LocalDateTimePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

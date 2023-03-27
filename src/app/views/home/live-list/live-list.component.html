@@ -10,7 +10,7 @@
               <p style="display: flex; justify-content: space-between;">
                 <span style="font-size: 1.2rem;">{{live.liveName}}</span>
                 <mat-chip class="mat-chip-next">
-                  <span>{{live.liveDate}}</span>
+                  <span>{{live.liveDate | localDateTime}}</span>
                 </mat-chip>
               </p>
               <p style="font-size: 0.8rem;">
@@ -42,7 +42,7 @@
               <p style="display: flex; justify-content: space-between;">
                 <span style="font-size: 1.2rem;">{{live.liveName}}</span>
                 <mat-chip class="mat-chip-previous">
-                  <span>{{live.liveDate}}</span>
+                  <span>{{live.liveDate | localDateTime}}</span>
                 </mat-chip>
               </p>
             </div>
